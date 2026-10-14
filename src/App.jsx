@@ -27,8 +27,16 @@ function App() {
   }
 
   if (page === 'plants') return <ProductList onNavigate={setPage} />;
-  if (page === 'cart')   return <CartItem onNavigate={setPage} />;
-  if (page === 'about')  return <AboutUs onNavigate={setPage} />;
+
+  if (page === 'cart')
+    return (
+      <CartItem
+        onNavigate={setPage}
+        onContinueShopping={() => setPage('plants')}
+      />
+    );
+
+  if (page === 'about') return <AboutUs onNavigate={setPage} />;
 
   return null;
 }

@@ -161,3 +161,30 @@
 
 /* About */
 .about-page { padding: 40px 32px; max-width: 800px; }
+
+/* Navbar additions for button-based nav links */
+.nav-link {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-link:hover { text-decoration: underline; }
+
+.cart-icon { font-size: 1.15rem; }
+
+.page-title {
+  padding: 24px 32px 0;
+  color: #1b5e20;
+}
+
+.cart-count-line {
+  margin: 8px 0 20px;
+  color: #444;
+}
